@@ -1,0 +1,89 @@
+{
+  "note": "Curated manifest of major public YARA rule collections. `path` is the subtree under the clone that holds .yar/.yara files (\"\" = whole repo). `license` is best-known and NOT legal advice — consult each repo. Rule BODIES are fetched into resources/corpus/ (gitignored), never vendored here; only derived metadata is indexed. See resources/README.md.",
+  "sources": [
+    {
+      "name": "signature-base",
+      "repo": "https://github.com/Neo23x0/signature-base.git",
+      "path": "yara",
+      "license": "Nextron Detection Rules License (non-commercial)",
+      "description": "Florian Roth / Nextron — the canonical large APT & malware rule set."
+    },
+    {
+      "name": "yara-rules-community",
+      "repo": "https://github.com/Yara-Rules/rules.git",
+      "path": "",
+      "license": "GPL-2.0 / various (per-file)",
+      "description": "Yara-Rules community collection (malware, packers, webshells, CVEs)."
+    },
+    {
+      "name": "elastic-protections",
+      "repo": "https://github.com/elastic/protections-artifacts.git",
+      "path": "yara",
+      "license": "Elastic License 2.0",
+      "description": "Elastic Security's production detection rules."
+    },
+    {
+      "name": "reversinglabs",
+      "repo": "https://github.com/reversinglabs/reversinglabs-yara-rules.git",
+      "path": "yara",
+      "license": "MIT",
+      "description": "ReversingLabs curated malware-family rules."
+    },
+    {
+      "name": "inquest",
+      "repo": "https://github.com/InQuest/yara-rules.git",
+      "path": "",
+      "license": "BSD-3-Clause / various",
+      "description": "InQuest Labs rules (documents, exploits, evasion)."
+    },
+    {
+      "name": "bartblaze",
+      "repo": "https://github.com/bartblaze/Yara-rules.git",
+      "path": "rules",
+      "license": "MIT",
+      "description": "bartblaze — malware, tools, and technique rules."
+    },
+    {
+      "name": "trellix-atr",
+      "repo": "https://github.com/advanced-threat-research/Yara-Rules.git",
+      "path": "",
+      "license": "Apache-2.0 / various",
+      "description": "Trellix (McAfee ATR) APT and malware rules."
+    },
+    {
+      "name": "mandiant-redteam",
+      "repo": "https://github.com/mandiant/red_team_tool_countermeasures.git",
+      "path": "",
+      "license": "Apache-2.0 (see repo)",
+      "description": "Mandiant countermeasures for the leaked red-team toolset."
+    },
+    {
+      "name": "eset-iocs",
+      "repo": "https://github.com/eset/malware-ioc.git",
+      "path": "",
+      "license": "BSD-2-Clause",
+      "description": "ESET research IOCs, including YARA rules per campaign."
+    },
+    {
+      "name": "citizenlab",
+      "repo": "https://github.com/citizenlab/malware-signatures.git",
+      "path": "",
+      "license": "various (per-file)",
+      "description": "Citizen Lab malware signatures (targeted-threat / spyware)."
+    },
+    {
+      "name": "deadbits",
+      "repo": "https://github.com/deadbits/yara-rules.git",
+      "path": "",
+      "license": "various (per-file)",
+      "description": "deadbits collected/curated rules."
+    },
+    {
+      "name": "telekom-security",
+      "repo": "https://github.com/telekom-security/malware_analysis.git",
+      "path": "",
+      "license": "various (per-file)",
+      "description": "Deutsche Telekom CERT malware-analysis YARA rules."
+    }
+  ]
+}

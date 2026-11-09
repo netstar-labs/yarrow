@@ -1,0 +1,37 @@
+# Test binary, built with `go test -c`
+*.test
+
+# Editor/IDE
+.vscode/
+.claude
+
+# macOS
+**/.DS_Store
+**/~*
+
+# transient work dirs
+_bin/
+_dev/
+sandbox/
+install/
+
+# Differential-testing scratch: the reconstructed rule corpus and the built
+# YARA-X reference harness are large and reproducible — not tracked.
+_corpus/
+_ref/
+
+# Aggregated public YARA rule bodies (fetched by resources/fetch.sh) are large and
+# carry mixed third-party licenses — not vendored. Only the derived index is
+# tracked (resources/index.jsonl, resources/index.summary.json).
+resources/corpus/
+
+# working plans stay local; the rest of docs/ is committed
+docs/plan/
+
+# build/ tracks only the build script (build/yarrow); its output is not tracked
+build/install/
+build/bin/
+build/host
+
+# NOTE: testdata/ is deliberately NOT ignored here (unlike the generic skeleton):
+# testdata/parser/ holds the 284 reference golden files that ARE the test oracle.

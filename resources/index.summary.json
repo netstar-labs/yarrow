@@ -1,0 +1,294 @@
+{
+  "imports": {
+    "androguard": 83,
+    "cuckoo": 9,
+    "dotnet": 11,
+    "elf": 7,
+    "hash": 55,
+    "math": 175,
+    "pe": 13021
+  },
+  "note": "Derived metadata only. Rule bodies are not vendored; see resources/README.md. Regenerate with `go run ./cmd/yindex`.",
+  "sources": [
+    {
+      "name": "signature-base",
+      "license": "Nextron Detection Rules License (non-commercial)",
+      "description": "Florian Roth / Nextron — the canonical large APT \u0026 malware rule set.",
+      "files": 750,
+      "rules": 5904,
+      "clean_files": 750,
+      "error_files": 0
+    },
+    {
+      "name": "yara-rules-community",
+      "license": "GPL-2.0 / various (per-file)",
+      "description": "Yara-Rules community collection (malware, packers, webshells, CVEs).",
+      "files": 566,
+      "rules": 12911,
+      "clean_files": 566,
+      "error_files": 0
+    },
+    {
+      "name": "elastic-protections",
+      "license": "Elastic License 2.0",
+      "description": "Elastic Security's production detection rules.",
+      "files": 905,
+      "rules": 2666,
+      "clean_files": 905,
+      "error_files": 0
+    },
+    {
+      "name": "reversinglabs",
+      "license": "MIT",
+      "description": "ReversingLabs curated malware-family rules.",
+      "files": 310,
+      "rules": 1240,
+      "clean_files": 310,
+      "error_files": 0
+    },
+    {
+      "name": "inquest",
+      "license": "BSD-3-Clause / various",
+      "description": "InQuest Labs rules (documents, exploits, evasion).",
+      "files": 38,
+      "rules": 39,
+      "clean_files": 37,
+      "error_files": 1
+    },
+    {
+      "name": "bartblaze",
+      "license": "MIT",
+      "description": "bartblaze — malware, tools, and technique rules.",
+      "files": 110,
+      "rules": 143,
+      "clean_files": 110,
+      "error_files": 0
+    },
+    {
+      "name": "trellix-atr",
+      "license": "Apache-2.0 / various",
+      "description": "Trellix (McAfee ATR) APT and malware rules.",
+      "files": 125,
+      "rules": 167,
+      "clean_files": 125,
+      "error_files": 0
+    },
+    {
+      "name": "mandiant-redteam",
+      "license": "Apache-2.0 (see repo)",
+      "description": "Mandiant countermeasures for the leaked red-team toolset.",
+      "files": 173,
+      "rules": 341,
+      "clean_files": 173,
+      "error_files": 0
+    },
+    {
+      "name": "eset-iocs",
+      "license": "BSD-2-Clause",
+      "description": "ESET research IOCs, including YARA rules per campaign.",
+      "files": 24,
+      "rules": 138,
+      "clean_files": 24,
+      "error_files": 0
+    },
+    {
+      "name": "citizenlab",
+      "license": "various (per-file)",
+      "description": "Citizen Lab malware signatures (targeted-threat / spyware).",
+      "files": 48,
+      "rules": 152,
+      "clean_files": 48,
+      "error_files": 0
+    },
+    {
+      "name": "deadbits",
+      "license": "various (per-file)",
+      "description": "deadbits collected/curated rules.",
+      "files": 24,
+      "rules": 24,
+      "clean_files": 24,
+      "error_files": 0
+    },
+    {
+      "name": "telekom-security",
+      "license": "various (per-file)",
+      "description": "Deutsche Telekom CERT malware-analysis YARA rules.",
+      "files": 8,
+      "rules": 17,
+      "clean_files": 8,
+      "error_files": 0
+    }
+  ],
+  "top_tags": [
+    {
+      "tag": "PEiD",
+      "count": 7625
+    },
+    {
+      "tag": "malicious",
+      "count": 313
+    },
+    {
+      "tag": "tc_detection",
+      "count": 309
+    },
+    {
+      "tag": "Family",
+      "count": 217
+    },
+    {
+      "tag": "EK",
+      "count": 71
+    },
+    {
+      "tag": "RAT",
+      "count": 66
+    },
+    {
+      "tag": "android",
+      "count": 55
+    },
+    {
+      "tag": "webshell",
+      "count": 46
+    },
+    {
+      "tag": "beta",
+      "count": 41
+    },
+    {
+      "tag": "PDF",
+      "count": 32
+    },
+    {
+      "tag": "MALW",
+      "count": 30
+    },
+    {
+      "tag": "raw",
+      "count": 27
+    },
+    {
+      "tag": "hatman",
+      "count": 26
+    },
+    {
+      "tag": "Packer",
+      "count": 25
+    },
+    {
+      "tag": "FILE",
+      "count": 24
+    },
+    {
+      "tag": "maldoc",
+      "count": 22
+    },
+    {
+      "tag": "APT",
+      "count": 20
+    },
+    {
+      "tag": "HIGHVOL",
+      "count": 20
+    },
+    {
+      "tag": "Platinum",
+      "count": 20
+    },
+    {
+      "tag": "SCRIPT",
+      "count": 20
+    },
+    {
+      "tag": "PECheck",
+      "count": 17
+    },
+    {
+      "tag": "AntiDebug",
+      "count": 15
+    },
+    {
+      "tag": "Variant",
+      "count": 15
+    },
+    {
+      "tag": "amtrckr",
+      "count": 15
+    },
+    {
+      "tag": "mail",
+      "count": 15
+    },
+    {
+      "tag": "Surtr",
+      "count": 14
+    },
+    {
+      "tag": "Trojan",
+      "count": 12
+    },
+    {
+      "tag": "banker",
+      "count": 12
+    },
+    {
+      "tag": "LOG",
+      "count": 10
+    },
+    {
+      "tag": "Toolkit",
+      "count": 10
+    },
+    {
+      "tag": "sharedcode",
+      "count": 9
+    },
+    {
+      "tag": "winmalware",
+      "count": 9
+    },
+    {
+      "tag": "exploit",
+      "count": 8
+    },
+    {
+      "tag": "malware",
+      "count": 8
+    },
+    {
+      "tag": "rat",
+      "count": 8
+    },
+    {
+      "tag": "sshdoor",
+      "count": 8
+    },
+    {
+      "tag": "AntiVM",
+      "count": 7
+    },
+    {
+      "tag": "fake",
+      "count": 7
+    },
+    {
+      "tag": "infostealer",
+      "count": 7
+    },
+    {
+      "tag": "DebuggerCheck",
+      "count": 6
+    }
+  ],
+  "totals": {
+    "clean_files": 3080,
+    "error_files": 1,
+    "files": 3081,
+    "parse_success_pct": 99.97,
+    "rules": 23742,
+    "rules_global": 0,
+    "rules_private": 153,
+    "sources": 12
+  }
+}
